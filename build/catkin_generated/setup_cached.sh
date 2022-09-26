@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/marco/Documents/Github/MTRX3760_PROJ1/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/marco/Documents/Github/MTRX3760_PROJ1/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/marco/Documents/Github/MTRX3760_PROJ1/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/marco/Documents/Github/MTRX3760_PROJ1/src:$ROS_PACKAGE_PATH"
