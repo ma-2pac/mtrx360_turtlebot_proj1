@@ -203,3 +203,7 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(SampleTurtlebotNode src/main.cpp)
+target_link_libraries(SampleTurtlebotNode ${catkin_LIBRARIES})
+#add_dependencies(listener beginner_tutorials_generate_messages_cpp)
