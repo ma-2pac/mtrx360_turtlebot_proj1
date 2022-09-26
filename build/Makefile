@@ -285,19 +285,6 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named SampleTurtlebotNode
-
-# Build rule for target.
-SampleTurtlebotNode: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SampleTurtlebotNode
-.PHONY : SampleTurtlebotNode
-
-# fast build rule for target.
-SampleTurtlebotNode/fast:
-	$(MAKE) -f maze_runner/CMakeFiles/SampleTurtlebotNode.dir/build.make maze_runner/CMakeFiles/SampleTurtlebotNode.dir/build
-.PHONY : SampleTurtlebotNode/fast
-
-#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
 
 # Build rule for target.
@@ -441,6 +428,19 @@ std_msgs_generate_messages_cpp/fast:
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named sample_package
+
+# Build rule for target.
+sample_package: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sample_package
+.PHONY : sample_package
+
+# fast build rule for target.
+sample_package/fast:
+	$(MAKE) -f maze_runner/CMakeFiles/sample_package.dir/build.make maze_runner/CMakeFiles/sample_package.dir/build
+.PHONY : sample_package/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -514,7 +514,6 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... SampleTurtlebotNode"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
@@ -526,6 +525,7 @@ help:
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... sample_package"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"

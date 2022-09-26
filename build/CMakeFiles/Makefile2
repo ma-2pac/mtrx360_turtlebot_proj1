@@ -136,7 +136,7 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory maze_runner
 
 # Recursive "all" directory target.
-maze_runner/all: maze_runner/CMakeFiles/SampleTurtlebotNode.dir/all
+maze_runner/all: maze_runner/CMakeFiles/sample_package.dir/all
 
 .PHONY : maze_runner/all
 
@@ -146,7 +146,6 @@ maze_runner/preinstall:
 .PHONY : maze_runner/preinstall
 
 # Recursive "clean" directory target.
-maze_runner/clean: maze_runner/CMakeFiles/SampleTurtlebotNode.dir/clean
 maze_runner/clean: maze_runner/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 maze_runner/clean: maze_runner/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 maze_runner/clean: maze_runner/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
@@ -158,6 +157,7 @@ maze_runner/clean: maze_runner/CMakeFiles/std_msgs_generate_messages_eus.dir/cle
 maze_runner/clean: maze_runner/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 maze_runner/clean: maze_runner/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 maze_runner/clean: maze_runner/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+maze_runner/clean: maze_runner/CMakeFiles/sample_package.dir/clean
 maze_runner/clean: maze_runner/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 maze_runner/clean: maze_runner/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 maze_runner/clean: maze_runner/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
@@ -308,7 +308,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles --progress-num=5,6 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles --progress-num=3,4 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -335,7 +335,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles --progress-num=3,4 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles --progress-num=1,2 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -362,7 +362,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles --progress-num=9,10 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles --progress-num=7,8 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -389,7 +389,7 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles --progress-num=7,8 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles --progress-num=5,6 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -408,33 +408,6 @@ gtest: gtest/googletest/CMakeFiles/gtest.dir/rule
 gtest/googletest/CMakeFiles/gtest.dir/clean:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
-
-#=============================================================================
-# Target rules for target maze_runner/CMakeFiles/SampleTurtlebotNode.dir
-
-# All Build rule for target.
-maze_runner/CMakeFiles/SampleTurtlebotNode.dir/all:
-	$(MAKE) -f maze_runner/CMakeFiles/SampleTurtlebotNode.dir/build.make maze_runner/CMakeFiles/SampleTurtlebotNode.dir/depend
-	$(MAKE) -f maze_runner/CMakeFiles/SampleTurtlebotNode.dir/build.make maze_runner/CMakeFiles/SampleTurtlebotNode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles --progress-num=1,2 "Built target SampleTurtlebotNode"
-.PHONY : maze_runner/CMakeFiles/SampleTurtlebotNode.dir/all
-
-# Build rule for subdir invocation for target.
-maze_runner/CMakeFiles/SampleTurtlebotNode.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 maze_runner/CMakeFiles/SampleTurtlebotNode.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles 0
-.PHONY : maze_runner/CMakeFiles/SampleTurtlebotNode.dir/rule
-
-# Convenience name for target.
-SampleTurtlebotNode: maze_runner/CMakeFiles/SampleTurtlebotNode.dir/rule
-
-.PHONY : SampleTurtlebotNode
-
-# clean rule for target.
-maze_runner/CMakeFiles/SampleTurtlebotNode.dir/clean:
-	$(MAKE) -f maze_runner/CMakeFiles/SampleTurtlebotNode.dir/build.make maze_runner/CMakeFiles/SampleTurtlebotNode.dir/clean
-.PHONY : maze_runner/CMakeFiles/SampleTurtlebotNode.dir/clean
 
 #=============================================================================
 # Target rules for target maze_runner/CMakeFiles/std_msgs_generate_messages_py.dir
@@ -732,6 +705,33 @@ std_msgs_generate_messages_cpp: maze_runner/CMakeFiles/std_msgs_generate_message
 maze_runner/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
 	$(MAKE) -f maze_runner/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make maze_runner/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 .PHONY : maze_runner/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target maze_runner/CMakeFiles/sample_package.dir
+
+# All Build rule for target.
+maze_runner/CMakeFiles/sample_package.dir/all:
+	$(MAKE) -f maze_runner/CMakeFiles/sample_package.dir/build.make maze_runner/CMakeFiles/sample_package.dir/depend
+	$(MAKE) -f maze_runner/CMakeFiles/sample_package.dir/build.make maze_runner/CMakeFiles/sample_package.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles --progress-num=9,10 "Built target sample_package"
+.PHONY : maze_runner/CMakeFiles/sample_package.dir/all
+
+# Build rule for subdir invocation for target.
+maze_runner/CMakeFiles/sample_package.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 maze_runner/CMakeFiles/sample_package.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marco/Documents/Github/MTRX3760_PROJ1/build/CMakeFiles 0
+.PHONY : maze_runner/CMakeFiles/sample_package.dir/rule
+
+# Convenience name for target.
+sample_package: maze_runner/CMakeFiles/sample_package.dir/rule
+
+.PHONY : sample_package
+
+# clean rule for target.
+maze_runner/CMakeFiles/sample_package.dir/clean:
+	$(MAKE) -f maze_runner/CMakeFiles/sample_package.dir/build.make maze_runner/CMakeFiles/sample_package.dir/clean
+.PHONY : maze_runner/CMakeFiles/sample_package.dir/clean
 
 #=============================================================================
 # Target rules for target maze_runner/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir

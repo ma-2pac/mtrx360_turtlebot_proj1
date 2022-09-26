@@ -68,17 +68,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -100,6 +89,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -166,21 +166,6 @@ preinstall/fast:
 depend:
 	cd /home/marco/Documents/Github/MTRX3760_PROJ1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-# Convenience name for target.
-maze_runner/CMakeFiles/SampleTurtlebotNode.dir/rule:
-	cd /home/marco/Documents/Github/MTRX3760_PROJ1/build && $(MAKE) -f CMakeFiles/Makefile2 maze_runner/CMakeFiles/SampleTurtlebotNode.dir/rule
-.PHONY : maze_runner/CMakeFiles/SampleTurtlebotNode.dir/rule
-
-# Convenience name for target.
-SampleTurtlebotNode: maze_runner/CMakeFiles/SampleTurtlebotNode.dir/rule
-
-.PHONY : SampleTurtlebotNode
-
-# fast build rule for target.
-SampleTurtlebotNode/fast:
-	cd /home/marco/Documents/Github/MTRX3760_PROJ1/build && $(MAKE) -f maze_runner/CMakeFiles/SampleTurtlebotNode.dir/build.make maze_runner/CMakeFiles/SampleTurtlebotNode.dir/build
-.PHONY : SampleTurtlebotNode/fast
 
 # Convenience name for target.
 maze_runner/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
@@ -348,6 +333,21 @@ std_msgs_generate_messages_cpp/fast:
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+maze_runner/CMakeFiles/sample_package.dir/rule:
+	cd /home/marco/Documents/Github/MTRX3760_PROJ1/build && $(MAKE) -f CMakeFiles/Makefile2 maze_runner/CMakeFiles/sample_package.dir/rule
+.PHONY : maze_runner/CMakeFiles/sample_package.dir/rule
+
+# Convenience name for target.
+sample_package: maze_runner/CMakeFiles/sample_package.dir/rule
+
+.PHONY : sample_package
+
+# fast build rule for target.
+sample_package/fast:
+	cd /home/marco/Documents/Github/MTRX3760_PROJ1/build && $(MAKE) -f maze_runner/CMakeFiles/sample_package.dir/build.make maze_runner/CMakeFiles/sample_package.dir/build
+.PHONY : sample_package/fast
+
+# Convenience name for target.
 maze_runner/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
 	cd /home/marco/Documents/Github/MTRX3760_PROJ1/build && $(MAKE) -f CMakeFiles/Makefile2 maze_runner/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : maze_runner/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
@@ -413,7 +413,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /home/marco/Documents/Github/MTRX3760_PROJ1/build && $(MAKE) -f maze_runner/CMakeFiles/SampleTurtlebotNode.dir/build.make maze_runner/CMakeFiles/SampleTurtlebotNode.dir/src/main.cpp.o
+	cd /home/marco/Documents/Github/MTRX3760_PROJ1/build && $(MAKE) -f maze_runner/CMakeFiles/sample_package.dir/build.make maze_runner/CMakeFiles/sample_package.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -422,7 +422,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /home/marco/Documents/Github/MTRX3760_PROJ1/build && $(MAKE) -f maze_runner/CMakeFiles/SampleTurtlebotNode.dir/build.make maze_runner/CMakeFiles/SampleTurtlebotNode.dir/src/main.cpp.i
+	cd /home/marco/Documents/Github/MTRX3760_PROJ1/build && $(MAKE) -f maze_runner/CMakeFiles/sample_package.dir/build.make maze_runner/CMakeFiles/sample_package.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -431,7 +431,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /home/marco/Documents/Github/MTRX3760_PROJ1/build && $(MAKE) -f maze_runner/CMakeFiles/SampleTurtlebotNode.dir/build.make maze_runner/CMakeFiles/SampleTurtlebotNode.dir/src/main.cpp.s
+	cd /home/marco/Documents/Github/MTRX3760_PROJ1/build && $(MAKE) -f maze_runner/CMakeFiles/sample_package.dir/build.make maze_runner/CMakeFiles/sample_package.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -441,10 +441,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/local"
-	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... SampleTurtlebotNode"
+	@echo "... test"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
@@ -459,6 +458,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... install/strip"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... sample_package"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
