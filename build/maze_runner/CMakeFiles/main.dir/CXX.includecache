@@ -23,6 +23,10 @@ vector
 /home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/include/CLidar.h
 sensor_msgs/LaserScan.h
 -
+ros/ros.h
+/home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/include/ros/ros.h
+iostream
+-
 
 /home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/include/CObjectDetector.h
 CFilter.h
