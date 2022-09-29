@@ -11,6 +11,10 @@
 #include <sensor_msgs/LaserScan.h>
 #include <geometry_msgs/Twist.h>
 
+#include "CFilter.h"
+#include "CLidar.h"
+#include "CObjectDetector.h"
+
 // declare a publisher and subscriber
 // note this example uses global variables and functions, these should really be encapsulated,
 // e.g. by building all of this into a class

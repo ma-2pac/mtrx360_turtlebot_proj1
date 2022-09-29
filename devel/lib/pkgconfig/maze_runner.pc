@@ -3,6 +3,6 @@ prefix=/home/marco/Documents/Github/MTRX3760_PROJ1/devel
 Name: maze_runner
 Description: Description of maze_runner
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: roscpp std_msgs message_runtime

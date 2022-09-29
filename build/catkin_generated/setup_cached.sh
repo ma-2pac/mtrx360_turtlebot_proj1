@@ -8,3 +8,4 @@
 
 # modified environment variables
 export PWD='/home/marco/Documents/Github/MTRX3760_PROJ1/build'
+export PYTHONPATH="/home/marco/Documents/Github/MTRX3760_PROJ1/devel/lib/python3/dist-packages:$PYTHONPATH"

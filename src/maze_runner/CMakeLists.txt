@@ -49,7 +49,6 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(
   FILES
-  lidar_reading.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -67,10 +66,10 @@ add_message_files(
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -115,7 +114,7 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+  include
   ${catkin_INCLUDE_DIRS}
 )
 
@@ -204,9 +203,10 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_executable(sample_package src/main.cpp)
-target_link_libraries(sample_package ${catkin_LIBRARIES})
+add_executable(main src/main.cpp)
+target_link_libraries(main ${catkin_LIBRARIES})
+#add_dependencies(listener beginner_tutorials_generate_messages_cpp)
 
-add_executable(maze_runner src/CFilter.cpp)
-target_link_libraries(maze_runner ${catkin_LIBRARIES})
+# add_executable(CFilter src/CFilter.cpp)
+# target_link_libraries(CFilter ${catkin_LIBRARIES})
 #add_dependencies(listener beginner_tutorials_generate_messages_cpp)
