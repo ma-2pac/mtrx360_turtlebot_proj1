@@ -1,16 +1,22 @@
 #ifndef _OBJECT_DETECTOR_H
 #define _OBJECT_DETECTOR_H
 
+#include <vector>
+
 #include "CFilter.h"
 
 const int BUFFER_SIZE=50;
 
 class CObjectDetector{
     public:
-        float PublishFilterData();
+        double getRawLidarData();
+        double getFilteredLidarData();
+        void PublishFilterData();
     private:
         CFilter Filter;
-        double _dataBuffer[BUFFER_SIZE];
+        CLidar  Lidar;
+        std::vector<double>_dataBuffer;
+        int _bufferIndex;
 
 };
 #endif

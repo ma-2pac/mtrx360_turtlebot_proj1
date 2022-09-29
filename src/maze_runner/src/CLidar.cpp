@@ -8,4 +8,6 @@ double CLidar::LaserCallback(const sensor_msgs::LaserScan& msg){
     //example for how to access members
     float min_angle = msg.angle_min;
 
+    return min_angle
+
 }
