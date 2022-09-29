@@ -2,8 +2,8 @@
 
 #include "CFilter.h"
 
-void CFilter::AssignLidarPointer(CLidar* pLidar){
-    _pLidar=pLidar;
+void CFilter::AssignLidarPointer(CObjectDetector* pCObjectDetector){
+    _pCObjectDetector=pCObjectDetector;
 }
 
 void CFilter::GetSensorData(){

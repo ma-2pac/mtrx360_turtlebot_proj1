@@ -9,20 +9,20 @@
 #include <cstdlib> // rand
 #include <vector> 
 
-#include "CLidar.h"
+#include "CObjectDetector.h"
 
-class CLidar;
+class CObjectDetector;
 
 class CFilter{
 
     public:
-        void AssignLidarPointer(CLidar* pLidar);
+        void AssignDetectorPointer(CObjectDetector* pCObjectDetector);
         void GetSensorData();
-        float FilterData(); //uses kalman filter
-        float ReturnFilterData();
+        void FilterData(); //uses kalman filter
+        double ReturnFilterData();
 
     private:
-        CLidar* _pLidar;
+        CObjectDetector* _pCObjectDetector;
         std::vector<double> _rawData;
         std::vector<double>  _filteredData;
         
