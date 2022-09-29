@@ -9,18 +9,22 @@
 #include <cstdlib> // rand
 #include <vector> 
 
+#include "CLidar.h"
 
+class CLidar;
 
 class CFilter{
 
     public:
+        void AssignLidarPointer(CLidar* pLidar);
         void GetSensorData();
         float FilterData(); //uses kalman filter
         float ReturnFilterData();
 
     private:
-        std::vector<float> _rawData;
-        std::vector<float>  _filteredData;
+        CLidar* _pLidar;
+        std::vector<double> _rawData;
+        std::vector<double>  _filteredData;
         
 };
 

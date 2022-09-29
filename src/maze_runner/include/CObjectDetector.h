@@ -9,8 +9,8 @@ const int BUFFER_SIZE=50;
 
 class CObjectDetector{
     public:
-        double getRawLidarData();
-        double getFilteredLidarData();
+        void getRawLidarData();
+        void getFilteredLidarData();
         void PublishFilterData();
     private:
         CFilter Filter;
