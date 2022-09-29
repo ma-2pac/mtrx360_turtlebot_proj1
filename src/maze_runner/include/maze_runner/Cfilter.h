@@ -2,10 +2,14 @@
 #ifndef _FILTER_H
 #define _FILTER_H
 
-
+#include "ros/ros.h"
+#include <sensor_msgs/LaserScan.h>
+#include <geometry_msgs/Twist.h>
 #include <iostream>
 #include <cstdlib> // rand
 #include <vector> 
+
+
 
 class CFilter{
 
@@ -17,6 +21,7 @@ class CFilter{
     private:
         std::vector<float> _rawData;
         std::vector<float>  _filteredData;
+        
 };
 
 #endif
