@@ -1,0 +1,4 @@
+<launch>
+  <node name="maze_runner" pkg="maze_runner" type="maze_runner" output="screen" clear_params="true" ns="test">
+  </node>
+</launch>
