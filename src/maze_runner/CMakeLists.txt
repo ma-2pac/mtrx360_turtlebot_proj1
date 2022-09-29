@@ -206,4 +206,7 @@ include_directories(
 
 add_executable(sample_package src/main.cpp)
 target_link_libraries(sample_package ${catkin_LIBRARIES})
+
+add_executable(maze_runner src/CFilter.cpp)
+target_link_libraries(maze_runner ${catkin_LIBRARIES})
 #add_dependencies(listener beginner_tutorials_generate_messages_cpp)
