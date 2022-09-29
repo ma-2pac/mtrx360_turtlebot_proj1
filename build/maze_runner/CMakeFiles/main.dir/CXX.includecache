@@ -19,6 +19,8 @@ cstdlib
 -
 vector
 -
+CLidar.h
+/home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/include/CLidar.h
 
 /home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/include/CLidar.h
 sensor_msgs/LaserScan.h
