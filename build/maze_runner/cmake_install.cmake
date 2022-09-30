@@ -72,3 +72,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/maze_runner" TYPE FILE FILES "/home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/maze_runner" TYPE DIRECTORY FILES "/home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/include/maze_runner/")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/maze_runner/launch" TYPE DIRECTORY FILES "/home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/launch")
+endif()
+

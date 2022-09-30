@@ -19,8 +19,8 @@ cstdlib
 -
 vector
 -
-CLidar.h
-/home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/include/CLidar.h
+CObjectDetector.h
+/home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/include/CObjectDetector.h
 
 /home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/include/CLidar.h
 sensor_msgs/LaserScan.h
@@ -35,6 +35,8 @@ vector
 -
 CFilter.h
 /home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/include/CFilter.h
+CLidar.h
+/home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/include/CLidar.h
 
 /home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/src/main.cpp
 ros/ros.h
@@ -49,12 +51,12 @@ sensor_msgs/LaserScan.h
 -
 geometry_msgs/Twist.h
 -
+CObjectDetector.h
+/home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/src/CObjectDetector.h
 CFilter.h
 /home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/src/CFilter.h
 CLidar.h
 /home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/src/CLidar.h
-CObjectDetector.h
-/home/marco/Documents/Github/MTRX3760_PROJ1/src/maze_runner/src/CObjectDetector.h
 
 /opt/ros/noetic/include/geometry_msgs/Twist.h
 string

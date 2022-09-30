@@ -131,7 +131,10 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/marco/Documents/Github/MTRX3760_PROJ1/build/gtest/cmake_install.cmake")
+  include("/home/marco/Documents/Github/MTRX3760_PROJ1/build/turtlebot3_simulations/turtlebot3_simulations/cmake_install.cmake")
   include("/home/marco/Documents/Github/MTRX3760_PROJ1/build/maze_runner/cmake_install.cmake")
+  include("/home/marco/Documents/Github/MTRX3760_PROJ1/build/turtlebot3_simulations/turtlebot3_fake/cmake_install.cmake")
+  include("/home/marco/Documents/Github/MTRX3760_PROJ1/build/turtlebot3_simulations/turtlebot3_gazebo/cmake_install.cmake")
 
 endif()
 

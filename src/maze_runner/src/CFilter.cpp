@@ -7,5 +7,5 @@ void CFilter::AssignLidarPointer(CObjectDetector* pCObjectDetector){
 }
 
 void CFilter::GetSensorData(){
-    _rawData.push_back(_pLidar->LaserCallback);
+    //_rawData.push_back(_pCObjectDetector->LaserCallback);
 }
