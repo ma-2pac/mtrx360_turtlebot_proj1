@@ -5,7 +5,7 @@
 
 
 /**
- * @brief 
+ * @brief Wheel motor class constructor
  * 
  */
 CWheelMotor::CWheelMotor(/* args */)

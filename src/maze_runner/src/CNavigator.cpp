@@ -5,7 +5,7 @@
 
 
 /**
- * @brief 
+ * @brief Navigator class constructor
  * 
  */
 CNavigator::CNavigator(/* args */)

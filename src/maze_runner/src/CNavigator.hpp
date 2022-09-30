@@ -9,20 +9,20 @@
 class CNavigator
 {
 
-private:
-    CMovement _movement;
+    private:
+        CMovement _movement;
 
-    // Current direction variable in 10 degrees increment
-    int _currentDirection;
+        // Current direction variable in 10 degrees increment
+        int _currentDirection;
 
-    int _nextMove;
+        int _nextMove;
 
-    int nextMove();
+        int nextMove();
 
-    // Place holder for object detector
-public:
-    CNavigator(/* args */);
-    ~CNavigator();
+        // Place holder for object detector
+    public:
+        CNavigator(/* args */);
+        ~CNavigator();
 };
 
 

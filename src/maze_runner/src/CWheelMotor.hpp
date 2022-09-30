@@ -7,14 +7,14 @@
 
 class CWheelMotor
 {
-private:
-    /* data */
-public:
-    CWheelMotor(/* args */);
-    ~CWheelMotor();
+    private:
+        /* data */
+    public:
+        CWheelMotor(/* args */);
+        ~CWheelMotor();
 
-    int rotateRightWheel(int rpm);
-    int rotateLeftWheel(int rpm);
+        int rotateRightWheel(int rpm);
+        int rotateLeftWheel(int rpm);
 
 };
 

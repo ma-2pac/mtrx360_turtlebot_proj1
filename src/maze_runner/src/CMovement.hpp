@@ -9,14 +9,14 @@
 
 class CMovement
 {
-private:
-    CWheelMotor _wheelMotors;
-public:
-    CMovement(/* args */);
-    ~CMovement();
+    private:
+        CWheelMotor _wheelMotors;
+    public:
+        CMovement(/* args */);
+        ~CMovement();
 
-    
-    int moveTurtle(int movementCode);
+        
+        int moveTurtle(int movementCode);
 };
 
 
